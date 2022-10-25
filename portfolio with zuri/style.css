@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "SourceSansPro-Black", Helvetica, Arial;
+}
+body{
+    background:  #fafbfb;
+}
+header{
+    font-family: "SourceSansPro-Black", Helvetica, Arial;
+    padding: 10px;
+}
+
+header h2{
+    color: #3A4046;
+    letter-spacing: 1px;
+    font-size: 24px;
+
+}
+header span{
+    color:#CF1332;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 30px;
+}
+nav ul li a{
+    color: #3A4046;
+    text-decoration: none;
+}
+nav ul li::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    transition: 0.5s ease-in-out;
+    margin: auto;
+    background: #CF1332;
+}
+nav ul li:hover::after{
+    width: 30px;
+}
+nav ul li:hover{
+    cursor: pointer;
+}
+nav button{
+    color: white;
+    border: #CF1332 2px solid;
+    margin-left: 70px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    background:  #CF1332;
+    transition: 0.3s ease-in-out;
+}
+nav button:hover{
+    cursor: pointer;
+    background:#CF1332;
+    color: #fafbfb;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    transform: translateY(-3px);
+    
+}
+.container{
+    min-height: 70%;
+    width: auto;
+    margin: 50px;
+    padding-top: 50px;
+}
+.body{
+    font-family: "SourceSansPro-Black", Helvetica, Arial;
+    color: #3A4046;
+}
+.body h2{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 80px;
+    text-transform: none;
+}
+.body h3{
+    margin-top: 10px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.body::before{
+    content: 'OLUWOLE DANIEL OLUWATIMILEYIN';
+    display: block;
+    background-color: #CF1332;
+    width: 30%;
+    height: 25px;
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 32px;
+}
+.body h2::after{
+    content: '';
+    display: block;
+    width: 300px;
+    height: 3px;
+    transition: 0.5s ease-in-out;
+    margin: auto;
+    background: #CF1332;
+}
+.content{
+    font-family: "OpenSans", Helvetica, Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-transform: none;
+    margin-top: 20px;
+}
+section{
+    font-family: "SourceSansPro-Black", Helvetica, Arial;
+    color: #3A4046;
+}
+.section{
+    color: #CF1332;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.content li {
+    color: red;
+}
+
+.content p{
+    color: #3A4046;
+}
+
+.content li p{
+    color: #3A4046;
+}
+
+.content li{
+    list-style-type: ">";
+}
+
+.img{
+    height: 25%;
+    width: 22%;
+    border-radius: 5px;
+    float: left;
+    padding-right: 20px;
+}
+section span{
+    font-size: 20px;
+    font-style:oblique;
+}
+.content span{
+    color: #CF1332;
+}
+figure{
+    font-family: "OpenSans", Helvetica, Arial;
+    color: #3A4046;
+    width: 70%;
+    height: auto;
+    min-height: 165px;
+    border: #3A4046 3px solid;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+.image{
+    width: 25%;
+    height: 160px;
+    min-height: 160px;
+    float: left;
+    border-radius: 5px;
+}
+figure h1{
+    text-align: center;
+    text-decoration: underline;
+}
+figure h3{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-transform: none;
+    margin-top: 0.5%;
+    margin-left: 27%;
+}
+figure button{
+    color: white;
+    border: #CF1332 2px solid;
+    margin-left: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    background:  #CF1332;
+    transition: 0.3s ease-in-out;
+}
+figure button:hover{
+    cursor: pointer;
+    background:#CF1332;
+    color: #fafbfb;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    transform: translateY(-3px);   
+}
+.contact{
+    color: #3A4046;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.contact button{
+    width: 100%;
+    padding: 10px;
+    background: #CF1332;
+    color: #fafbfb;
+    border: #CF1332;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.contact button:hover{
+    cursor: pointer;
+    background:#CF1332;
+    color: #fafbfb;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    transform: translateY(-3px);  
+}
+.icon{
+    padding: 5%;
+}
+.icon i{
+    padding: 5px;
+}
+.icon a{
+    text-decoration: none;
+    color: #3A4046;
+    transition: 0.2s ease-in-out;
+}
+.icon a:hover{
+    color: #CF1332;
+}
+.form{
+    width: 40%;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+.hello{
+    text-align: center;
+    color: #3A4046;
+
+}
+.form button{
+    width: 100%;
+    padding: 10px;
+    background: #CF1332;
+    color: #fafbfb;
+    border: #CF1332;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.form button:hover{
+    cursor: pointer;
+    background:#CF1332;
+    color: #fafbfb;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    transform: translateY(-3px);  
+}
+footer{
+    width: auto;
+    height: 20%;
+    background: #3A4046;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-1{
+    color: #fafbfb;
+    padding: 10px;
+}
+.foot-1 a{
+    color: #fafbfb;
+    text-decoration: none;
+}
+.foot-1 i{
+    padding: 10px;
+    margin-left: 5%;
+}
+.foot-2{
+    color: #fafbfb;
+    padding: 10px;
+}
+.foot-2 button{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.foot-2 button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.foot-2 span{
+    color: lightblue;
+}
