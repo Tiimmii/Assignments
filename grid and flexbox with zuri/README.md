@@ -1,7 +1,7 @@
 
-# Registration
+# Grid and Flexbox
 
-A Registration and Login page with a success page
+Sample of a Grid and Flexbox layout
 ## 🚀 About Me: Tiimmii
 I'm a full stack developer...
 
